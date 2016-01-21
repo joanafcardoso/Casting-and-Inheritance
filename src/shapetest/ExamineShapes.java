@@ -14,12 +14,13 @@ public class ExamineShapes {
 
     public void defineShape() {
         for (int i = 0; i < shapes.length; i++) {
-            String name = shapes[i].getName();
-            double area = shapes[i].getArea();
-            double perimeter = shapes[i].getPerimeter();
-            //String name = ShapeDetail.shapeName();
-            //double area = ShapeDetail.shapeArea();
-            //double perimeter = ShapeDetail.shapePerimeter();
+            //to determine the shapes without the ShapeDetail class
+            //String name = shapes[i].getName();
+            //double area = shapes[i].getArea();
+            //double perimeter = shapes[i].getPerimeter();
+            String name = ShapeDetail.shapeName(shapes[i]);
+            double area = ShapeDetail.shapeArea(shapes[i]);
+            double perimeter = ShapeDetail.shapePerimeter(shapes[i]);
             System.out.println("The area of the " + name + " is " + area);
             System.out.println("The perimeter of the " + name + " is " + perimeter);
         }
