@@ -3,6 +3,7 @@ package shapetest;
 /**
  * Created by Cardoso on 20-Jan-16.
  */
+//this class is not being used
 public class ShapeDetail {
     public static double shapeArea(Shape shape) {
         Shape shapeArea = new Shape();
